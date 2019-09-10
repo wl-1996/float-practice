@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>两栏布局-顶部条</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+      }
+      header {
+        background: gray;
+        color: right;
+      }
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .logo {
+        background: gray;
+        display: inline-block;
+        float: left;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+      .logo > img {
+        height: 26px;
+        vertical-align: middle;
+        float: left;
+      }
+      .nav {
+        float: right;
+      }
+      ul {
+        display: inline-block;
+      }
+      ul > li {
+        float: left;
+        padding: 4px 0.5em;
+        line-height: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logo">
+        <img src="imgs/2019-9-10-11-50-13.png" alt="" />
+      </div>
+      <ul class="clearfix nav">
+        <li>首页</li>
+        <li>课程</li>
+        <li>优惠</li>
+        <li>关于</li>
+      </ul>
+    </header>
+  </body>
+</html>

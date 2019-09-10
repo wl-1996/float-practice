@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>四栏布局-导航</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      ul {
+        border: 1px solid green;
+        display: inline-block;
+      }
+
+      ul > li {
+        border: 1px solid red;
+        float: left;
+        padding: 4px 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="clearfix">
+      <li>首页</li>
+      <li>课程</li>
+      <li>优惠</li>
+      <li>关于</li>
+    </ul>
+  </body>
+</html>
